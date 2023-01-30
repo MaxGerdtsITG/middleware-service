@@ -1,0 +1,25 @@
+{
+  "name": "get-invetory-service",
+  "vendor": "itglobers",
+  "version": "0.0.1",
+  "title": "Get invetory Service",
+  "description": "Backend App used to get invetory",
+  "builders": {
+    "node": "6.x"
+  },
+  "scripts": {
+    "prereleasy": "bash lint.sh"
+  },
+  "credentialType": "absolute",
+  "policies": [
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "{{account}}.vtexcommercestable.com.br",
+        "path": "*"
+      }
+    }
+  ],
+  "dependencies": {},
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}
